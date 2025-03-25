@@ -142,6 +142,7 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <h2 class="title is-3">Overview</h2>
     <div class="hero-body">
       <img src="static/images/overview_00.png"/>
       <h2 class="subtitle has-text-centered">
@@ -152,9 +153,26 @@
 </section>
 <!-- End teaser video -->
 
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Unified multimodal models (UMMs) have emerged as a powerful paradigm in foundational computer vision research, demonstrating significant potential in both image understanding and generation. However, existing research in the face domain primarily focuses on <strong>coarse</strong> facial attribute understanding, with limited capacity to handle fine-grained facial attributes and without addressing generation capabilities. To overcome these limitations, we propose UniF²ace, the first UMM tailored specifically for <strong>fine-grained</strong> face understanding and generation. In general, we train UniF²ace on a self-constructed, specialized dataset utilizing two mutually beneficial diffusion techniques and a two-level mixture-of-experts architecture. Specifically, we first build a large-scale facial dataset, UniF²ace-130K, which contains 130K image-text pairs with one million question-answering pairs that span a wide range of facial attributes. Second, we establish a theoretical connection between discrete diffusion score matching and masked generative models, optimizing both evidence lower bounds simultaneously, which significantly improves the model's ability to synthesize facial details. Finally, we introduce both token-level and sequence-level mixture-of-experts, enabling efficient fine-grained representation learning for both understanding and generation tasks. Extensive experiments on \dataset{} demonstrate that UniF²ace-130K outperforms existing UMMs and generative models, achieving superior performance across both understanding and generation tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
+  <h2 class="title is-3">Demos</h2>
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -199,23 +217,6 @@
 </section>
 <!-- End image carousel -->
 
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Unified multimodal models (UMMs) have emerged as a powerful paradigm in foundational computer vision research, demonstrating significant potential in both image understanding and generation. However, existing research in the face domain primarily focuses on <strong>coarse</strong> facial attribute understanding, with limited capacity to handle fine-grained facial attributes and without addressing generation capabilities. To overcome these limitations, we propose UniF²ace, the first UMM tailored specifically for <strong>fine-grained</strong> face understanding and generation. In general, we train UniF²ace on a self-constructed, specialized dataset utilizing two mutually beneficial diffusion techniques and a two-level mixture-of-experts architecture. Specifically, we first build a large-scale facial dataset, UniF²ace-130K, which contains 130K image-text pairs with one million question-answering pairs that span a wide range of facial attributes. Second, we establish a theoretical connection between discrete diffusion score matching and masked generative models, optimizing both evidence lower bounds simultaneously, which significantly improves the model's ability to synthesize facial details. Finally, we introduce both token-level and sequence-level mixture-of-experts, enabling efficient fine-grained representation learning for both understanding and generation tasks. Extensive experiments on \dataset{} demonstrate that UniF²ace-130K outperforms existing UMMs and generative models, achieving superior performance across both understanding and generation tasks.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
 
 
 
