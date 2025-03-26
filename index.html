@@ -37,6 +37,7 @@
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -158,7 +159,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-justified" style="margin-top: 20px;">
           <p>
             Unified multimodal models (UMMs) have emerged as a powerful paradigm in foundational computer vision research, demonstrating significant potential in both image understanding and generation. However, existing research in the face domain primarily focuses on <strong>coarse</strong> facial attribute understanding, with limited capacity to handle fine-grained facial attributes and without addressing generation capabilities. To overcome these limitations, we propose UniF²ace, the first UMM tailored specifically for <strong>fine-grained</strong> face understanding and generation. In general, we train UniF²ace on a self-constructed, specialized dataset utilizing two mutually beneficial diffusion techniques and a two-level mixture-of-experts architecture. Specifically, we first build a large-scale facial dataset, UniF²ace-130K, which contains 130K image-text pairs with one million question-answering pairs that span a wide range of facial attributes. Second, we establish a theoretical connection between discrete diffusion score matching and masked generative models, optimizing both evidence lower bounds simultaneously, which significantly improves the model's ability to synthesize facial details. Finally, we introduce both token-level and sequence-level mixture-of-experts, enabling efficient fine-grained representation learning for both understanding and generation tasks. Extensive experiments on \dataset{} demonstrate that UniF²ace-130K outperforms existing UMMs and generative models, achieving superior performance across both understanding and generation tasks.
           </p>
@@ -258,6 +259,53 @@
   </div>
 </section>
 <!-- End youtube video -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <h2 class="title is-3" style="text-align: center;">Experiments</h2>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Comparing the generative capability of UniF2ace with other generative and unified multimodal models, UniF²ace achieves state-of-the-art performance for models of the same parameter size and delivers comparable or superior results against larger models. <b>Bold</b> indicates the best performance overall, while <u>underlined</u> denotes the best among Und. and Gen. types. We use red to highlight the larger model size than ours.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table2.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Evaluation on face understanding tasks compared with advanced multimodal models and unified multimodal models. Our UniF²ace achieves the highest scores across all metrics, demonstrating superior ability to extract and analyze features from face images.
+          </h2>
+        </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/moe_analy_00.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+          Activation frequency of Token-Level and Sequence-Level MoE in different layers. The left column corresponds to understanding tasks, while the right column corresponds to generation tasks. Larger circles indicate experts that are activated more frequently.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/table3.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        Performance comparison with different loss. Considering all metrics, the optimal result is achieved with \( \alpha \)  = 0.01 in D3Diff. <b>>Bold</b>: Best performance. <u>Underlined</u>: Second best performance.
+      </h2>
+    </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/table4.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        Performance impact of token-level and sequence-level MoE in UniF²ace through ablation study. Both MoEs contribute significant performance improvements.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 
 <!--BibTex citation -->
