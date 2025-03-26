@@ -247,11 +247,11 @@
         <div class="column is-four-fifths">
           <div class="publication-video">
             <img src="static/images/method_00.png"/>
-            <div class="content has-text-justified">
-              <p>
-                Our UniF²ace architecture integrates Text-to-Image (T2I) and Multimodal Understanding (MMU) tasks. Text inputs are encoded via a tokenizer, while input images are processed through a VQGAN encoder, merging into a unified token sequence. A noise scheduler masks a subset of image tokens, which are then processed by a Transformer with Mixture-of-Experts (MoE) layers. These MoE layers are grouped for generation and understanding tasks, with the first operating at the token level using shared and routed experts, and the second incorporating domain-specific features at the sequence level. This hierarchical design enables fine-grained facial feature processing. The noise scheduler outputs \( p(x_t|x_0) \) for D3Diff loss computation, combined with text autoregressive loss to form the training objective.
-              </p>
-            </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Our UniF²ace architecture integrates Text-to-Image (T2I) and Multimodal Understanding (MMU) tasks. Text inputs are encoded via a tokenizer, while input images are processed through a VQGAN encoder, merging into a unified token sequence. A noise scheduler masks a subset of image tokens, which are then processed by a Transformer with Mixture-of-Experts (MoE) layers. These MoE layers are grouped for generation and understanding tasks, with the first operating at the token level using shared and routed experts, and the second incorporating domain-specific features at the sequence level. This hierarchical design enables fine-grained facial feature processing. The noise scheduler outputs \( p(x_t|x_0) \) for D3Diff loss computation, combined with text autoregressive loss to form the training objective.
+          </p>
         </div>
       </div>
     </div>
